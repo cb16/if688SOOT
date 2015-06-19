@@ -1,0 +1,6 @@
+Documentação:
+	O programa desenvolvido faz o call-graph do arquivo "Teste.java" e gera o dotGraph no arquivo de saída "result.dot". São consideradas apenas as Edges que partem do método main na classe principal do arquivo de teste.
+	O método internalTransform vai iterar pelos métodos da classe teste e colocar as Edges em questão no set "usedEdges". Então o método "createGraph" é chamado, criando o dotGraph com essas edges. Isso faz com que sejam observadas apenas as arestas de interesse (usadas) e não todas as que existem no callGraph (já que o callGraph gerado inicialmente possui mais de 100.000 edges, pois considera as chamadas do JVM).
+
+Instruções:
+	Basta rodar a classe Principal.java. O arquivo result vai conter o dotGraph da classe Teste.java na pasta do projeto.

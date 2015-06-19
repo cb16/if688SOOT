@@ -1,0 +1,20 @@
+digraph "My Dot Graph" {
+    node [shape=circle];
+    node [style=filled];
+    "<Teste: void main(java.lang.String[])>"
+    "<Classe: void <init>()>"
+    "<Teste: void main(java.lang.String[])>"->"<Classe: void <init>()>";
+    "<Teste: void <init>()>"
+    "<java.lang.Object: void <init>()>"
+    "<Teste: void <init>()>"->"<java.lang.Object: void <init>()>";
+    "<Teste: void a()>"
+    "<Teste: void main(java.lang.String[])>"->"<Teste: void a()>";
+    "<java.lang.Object: void <clinit>()>"
+    "<Teste: void main(java.lang.String[])>"->"<java.lang.Object: void <clinit>()>";
+    "<Classe: void met()>"
+    "<Teste: void main(java.lang.String[])>"->"<Classe: void met()>";
+    "<Other: void b()>"
+    "<Teste: void main(java.lang.String[])>"->"<Other: void b()>";
+    "<Other: void <init>()>"
+    "<Teste: void main(java.lang.String[])>"->"<Other: void <init>()>";
+}
